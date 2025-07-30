@@ -1,0 +1,25 @@
+
+h1 {
+    text-align: center;
+    color: darkred;
+}
+
+#nav-bar {
+    background-color: rgb(150, 107, 107);
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    color: aliceblue;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    list-style: none;
+}
+
+.list li a {
+    font-style: italic;
+    color: beige;
+}

@@ -1,0 +1,12 @@
+.main{
+    background-color: rgb(227, 220, 210);
+    color: black;
+    text-align: center;
+    padding: 100px;
+}
+.main button{
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(42, 31, 48);
+    background-color: rgb(184, 161, 205);
+}
