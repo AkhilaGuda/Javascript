@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Activity2</title>
+  <style>
+    body{
+        text-align: center;
+        font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Javascript variable, data type, string manipulation</h1>
+  <pre id="output"></pre> 
+
+  <script>
+    const result = document.getElementById("output");
+
+    // var , let , const
+    var name = "Akhila G";
+    let age = 21;
+    const isEmployee = true;
+
+    // data types 
+    let city = "hyderabad";
+    let score = 97;
+    let pass = true;
+    let empty = null;
+    let unassigned;
+    let languages = ["tel", "hin", "eng"];
+    let userId = { id: 1111, place: "hyd" };
+
+    // operators
+    let total = score + 1;
+    let isAdult = age >= 18;
+    let canVote = isEmployee && isAdult;
+
+    // true or false
+    let value = "";
+    let truthCheck = value ? "Truthy" : "Falsy";
+
+    // string manipulation
+    let firstName = "abc";
+    let lastName = "123";
+    let fullName = firstName + " " + lastName;
+    let half = fullName.slice(0, 3);
+    let length = fullName.length;
+
+    // type conversion
+    let date = "20/2/2024";
+    let dateNum = Number(date); // NaN
+    let numToStr = String(score);
+
+   
+    result.textContent = 
+`1. Variables:
+Name: ${name}, Age: ${age}, Employee: ${isEmployee}
+
+2. Data Types:
+City: ${city}, Score: ${score}, Passed: ${pass}, Empty: ${empty}, Undefined: ${unassigned}
+Languages: ${languages.join(", ")}, UserId: ${JSON.stringify(userId)}
+
+3. Operators:
+Total Score: ${total}, Is Adult: ${isAdult}, Can Vote: ${canVote}
+
+4. Truthy/Falsy:
+Value: "${value}" is ${truthCheck}
+
+5. String Manipulation:
+Full Name: ${fullName}, Length: ${length}, Sliced: ${half}
+
+6. Type Conversion:
+Date (String to Number): ${dateNum} (${typeof dateNum}), 
+Score (Number to String): ${numToStr} (${typeof numToStr})`;
+  </script>
+</body>
+</html>
