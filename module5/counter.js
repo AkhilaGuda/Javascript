@@ -1,11 +1,11 @@
 function createCounter(){
     let count=0;//local variable not accesible outside the function
     return {
-        increment : function(){
+        increment() {
             count++;
             return count;
         },
-        decrement : function(){
+        decrement() {
             count--;
             return count;
         }
