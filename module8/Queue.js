@@ -18,6 +18,9 @@ class Queue{
     isEmpty(){
         return this.items.length===0;
     }
+    display(){
+        console.log(this.items);
+    }
 }
 
 const queue=new Queue();
@@ -27,7 +30,7 @@ queue.enqueue(7);
 queue.enqueue(20);
 queue.enqueue(8);
 queue.enqueue(1);
-console.log(queue);
+queue.display();
 console.log("Dequeue element : ",queue.dequeue());
-console.log(queue);
+queue.display();
 console.log("Front element of queue: ",queue.front());
