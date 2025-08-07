@@ -7,4 +7,3 @@ export function subtract(a, b) {//named export
 export default function multiply(a, b){//default export
      return a * b;
 }
-
